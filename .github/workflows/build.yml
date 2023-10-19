@@ -1,0 +1,5 @@
+name: htop
+on: push
+jobs:
+  htop:
+    uses: gardenlinux/package-build/.github/workflows/build_pkg.yml@main
