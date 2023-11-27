@@ -1,14 +1,5 @@
 name: htop
-on:
-  push:
-    tags:
-      - 'gardenlinux*'
+on: push
 jobs:
-  htop:
-    uses: gardenlinux/package-build/.github/workflows/build_pkg.yml@feature/5-remove-pkg-yml
-    with:
-      email: "which@you.want"
-      maintainer: "Other than default"
-      distribution: whatever
-      message: "Specified message."
-
+  build_pkg:
+    uses: gardenlinux/package-build/.github/workflows/build_pkg.yml@main
