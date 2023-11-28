@@ -2,4 +2,4 @@ name: htop
 on: push
 jobs:
   build_pkg:
-    uses: gardenlinux/package-build/.github/workflows/build_pkg.yml@main
+    uses: gardenlinux/package-build/.github/workflows/build_pkg.yml@feature/25-split-release-creation
